@@ -1,0 +1,23 @@
+### GET request with a header
+GET http://localhost:8080/api/student
+Accept: application/json
+
+### Send POST request with json body
+POST http://localhost:8080/api/student
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "N",
+  "grad": 3.5
+}
+
+### Send POST request with json body
+PATCH http://localhost:8080/api/faculty/1
+Content-Type: application/json
+
+ [{
+    "id": 2
+  },{
+   "id": 1
+ }]
