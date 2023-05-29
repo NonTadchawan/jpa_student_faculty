@@ -7,17 +7,21 @@ POST http://localhost:8080/api/student
 Content-Type: application/json
 
 {
-  "id": 2,
-  "name": "N",
-  "grad": 3.5
+  "id": 10,
+  "name": "C",
+  "faculty" : {
+    "id": 1
+  }
 }
 
 ### Send POST request with json body
-PATCH http://localhost:8080/api/faculty/1
+PATCH http://localhost:8080/api/student/update/3
 Content-Type: application/json
 
- [{
-    "id": 2
-  },{
-   "id": 1
- }]
+{
+  "name": "V"
+}
+
+
+
+

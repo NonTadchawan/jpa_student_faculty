@@ -17,18 +17,24 @@ public class Student {
     @ManyToOne
     private Faculty faculty;
 
+    public Student() {
+    }
+
+    public Student(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Student(Integer id, String name, Faculty faculty) {
+        this.id = id;
+        this.name = name;
+        this.faculty = faculty;
+    }
+
     public Faculty getFaculty() {
         return faculty;
     }
 
-    public Student() {
-    }
-
-    public Student(Integer id, String name, Double grad) {
-        this.id = id;
-        this.name = name;
-        this.grad = grad;
-    }
 
     public void setFaculty(Faculty faculty) {
         this.faculty = faculty;
